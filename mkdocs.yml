@@ -1,0 +1,61 @@
+copyright: Copyright &copy; 2020 Adriana Kraig & Macklan Weinstein
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML
+  - https://unpkg.com/mermaid@8.4.8/dist/mermaid.min.js
+  - js/index.js
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+      linenums: true
+  - footnotes
+  - meta
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  - toc:
+      permalink: true
+nav:
+  - Home: index.md
+  - General Topology:
+    - Set Theory and Logic: book/chapter_1.md
+    - Topological Spaces and Continuous Functions: book/chapter_2.md
+    - Connectedness and Compactness: book/chapter_3.md
+    - Countability and Separation Axioms: book/chapter_4.md
+    - The Tychonoff Theorem: book/chapter_5.md
+    - Metrization Therorems and Paracompactness: book/chapter_6.md
+    - Complete Metric Spaces and Function Spaces: book/chapter_7.md
+    - Baire Spaces and Dimension Theory: book/chapter_8.md
+  - Algebraic Topology:
+    - The Fundamental Group: book/chapter_9.md
+    - Separation Theorems in the Plane: book/chapter_10.md
+    - The Seifert-van Kampen Theorem: book/chapter_11.md
+    - Classification of Surfaces: book/chapter_12.md
+    - Classification of Covering Spaces: book/chapter_13.md
+    - Applications to Group Theory: book/chapter_14.md
+plugins:
+  - search
+repo_name: learn-topology
+repo_url: https://github.com/wolfgangwazzlestrauss/learn-topology
+site_author: Adriana Kraig & Macklan Weinstein
+site_description: Workspace for learning topology.
+site_name: Learn Topology
+site_url: https://wolfgangwazzlestrauss.github.io/learn-topology/
+theme:
+  features:
+    - tabs
+  name: material
+  palette:
+    accent: light green
+    primary: cyan

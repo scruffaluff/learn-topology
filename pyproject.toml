@@ -1,0 +1,21 @@
+[build-system]
+build-backend = "poetry.masonry.api"
+requires = ["poetry>=1.0"]
+
+[tool.poetry]
+authors = [
+    "Adriana Kraig <kraigadriana@gmail.com>",
+    "Macklan Weinstein <wolfgangwazzlestrauss@gmail.com>",
+]
+description = "Workspace for learning Topology."
+homepage = "https://github.com/wolfgangwazzlestrauss/learn-topology"
+license = "MIT"
+name = "learn-topology"
+readme = "README.md"
+version = "0.0.1"
+
+[tool.poetry.dependencies]
+mkdocs = "^1.1.2"
+mkdocs-material = "^5.2.3"
+pymdown-extensions = "^7.1"
+python = "^3.6.1"
