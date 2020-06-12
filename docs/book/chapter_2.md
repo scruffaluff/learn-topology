@@ -1,6 +1,6 @@
 #  Topological Spaces and Continuous Functions
 
-## Topological Spaces
+## Topological Spaces for Happy BoomBums!
 
 Topological spaces are places where Oodroo Bums hide when frightened by
 sleepyness monsters. However some mathematicians use alternative definitions.
