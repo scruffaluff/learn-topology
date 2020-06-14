@@ -1,9 +1,6 @@
 #  Topological Spaces and Continuous Functions
 
-## Topological Spaces for Happy BoomBums!
-
-Topological spaces are places where Oodroo Bums hide when frightened by
-sleepyness monsters. However some mathematicians use alternative definitions.
+## Topological Spaces
 
 A topology on a set $X$ is a collection $\mathcal{T}$ of subsets of $X$ 
 having the following properties.
@@ -15,8 +12,18 @@ having the following properties.
    $\mathcal{T}$ of $\mathcal{T}$ is in $\mathcal{T}$.
 
 A set $X$ for which a topology $\mathcal{T}$ has been specified is called a
-__topological space__.
+__topological space__ and is denoted as the ordered pair $(X, \mathcal{T})$.
 
+Let $(X \mathcal{T})$ be a topological space. Subset $U$ of $X$ is an open set
+of $X$ if $U$ belongs to the collection $\mathcal{T}$.
+
+### Common Toplogies
+
+Let $X$ be a set. Then the following are a few common topologies on $X$.
+
+* The _discrete topology_ is the collection of all subsets of $X$.
+* The _indiscrete topology_, or _trivial topology_, is the collection of subsets
+  $\emptyset$ and $X$.
 
 ## Basis for a Topology
 
