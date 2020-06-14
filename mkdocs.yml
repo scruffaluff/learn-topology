@@ -29,21 +29,21 @@ markdown_extensions:
 nav:
   - Home: index.md
   - General Topology:
-    - Set Theory and Logic: book/chapter_1.md
-    - Topological Spaces and Continuous Functions: book/chapter_2.md
-    - Connectedness and Compactness: book/chapter_3.md
-    - Countability and Separation Axioms: book/chapter_4.md
-    - The Tychonoff Theorem: book/chapter_5.md
-    - Metrization Therorems and Paracompactness: book/chapter_6.md
-    - Complete Metric Spaces and Function Spaces: book/chapter_7.md
-    - Baire Spaces and Dimension Theory: book/chapter_8.md
+      - Set Theory and Logic: book/chapter_1.md
+      - Topological Spaces and Continuous Functions: book/chapter_2.md
+      - Connectedness and Compactness: book/chapter_3.md
+      - Countability and Separation Axioms: book/chapter_4.md
+      - The Tychonoff Theorem: book/chapter_5.md
+      - Metrization Therorems and Paracompactness: book/chapter_6.md
+      - Complete Metric Spaces and Function Spaces: book/chapter_7.md
+      - Baire Spaces and Dimension Theory: book/chapter_8.md
   - Algebraic Topology:
-    - The Fundamental Group: book/chapter_9.md
-    - Separation Theorems in the Plane: book/chapter_10.md
-    - The Seifert-van Kampen Theorem: book/chapter_11.md
-    - Classification of Surfaces: book/chapter_12.md
-    - Classification of Covering Spaces: book/chapter_13.md
-    - Applications to Group Theory: book/chapter_14.md
+      - The Fundamental Group: book/chapter_9.md
+      - Separation Theorems in the Plane: book/chapter_10.md
+      - The Seifert-van Kampen Theorem: book/chapter_11.md
+      - Classification of Surfaces: book/chapter_12.md
+      - Classification of Covering Spaces: book/chapter_13.md
+      - Applications to Group Theory: book/chapter_14.md
 plugins:
   - search
 repo_name: learn-topology
