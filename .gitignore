@@ -1,5 +1,6 @@
 .venv/*
 node_modules/*
+nohup.out
 notebooks/*
 package-lock.json
 poetry.lock
