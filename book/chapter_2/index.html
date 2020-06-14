@@ -679,48 +679,55 @@
                 
                 <h1 id="topological-spaces-and-continuous-functions">Topological Spaces and Continuous Functions<a class="headerlink" href="#topological-spaces-and-continuous-functions" title="Permanent link">&para;</a></h1>
 <h2 id="topological-spaces">Topological Spaces<a class="headerlink" href="#topological-spaces" title="Permanent link">&para;</a></h2>
-<p>A topology on a set <span><span class="MathJax_Preview">X</span><script type="math/tex">X</script></span> is a collection <span><span class="MathJax_Preview">\mathcal{T}</span><script type="math/tex">\mathcal{T}</script></span> of subsets of <span><span class="MathJax_Preview">X</span><script type="math/tex">X</script></span> 
-having the following properties.</p>
+<p>A topology on a set <span><span class="MathJax_Preview">X</span><script type="math/tex">X</script></span> is a collection <span><span class="MathJax_Preview">\mathcal{T}</span><script type="math/tex">\mathcal{T}</script></span> of subsets of <span><span class="MathJax_Preview">X</span><script type="math/tex">X</script></span> having
+the following properties.</p>
 <ol>
 <li><span><span class="MathJax_Preview">\emptyset</span><script type="math/tex">\emptyset</script></span> and <span><span class="MathJax_Preview">X</span><script type="math/tex">X</script></span> are in <span><span class="MathJax_Preview">\mathcal{T}</span><script type="math/tex">\mathcal{T}</script></span>.</li>
-<li>The union of the elements of any subcollection of <span><span class="MathJax_Preview">\mathcal{T}</span><script type="math/tex">\mathcal{T}</script></span> is in 
+<li>The union of the elements of any subcollection of <span><span class="MathJax_Preview">\mathcal{T}</span><script type="math/tex">\mathcal{T}</script></span> is in
    <span><span class="MathJax_Preview">\mathcal{T}</span><script type="math/tex">\mathcal{T}</script></span>.</li>
-<li>The intersection of the elements of any finite subcollection of 
-   <span><span class="MathJax_Preview">\mathcal{T}</span><script type="math/tex">\mathcal{T}</script></span> of <span><span class="MathJax_Preview">\mathcal{T}</span><script type="math/tex">\mathcal{T}</script></span> is in <span><span class="MathJax_Preview">\mathcal{T}</span><script type="math/tex">\mathcal{T}</script></span>.</li>
+<li>The intersection of the elements of any finite subcollection of <span><span class="MathJax_Preview">\mathcal{T}</span><script type="math/tex">\mathcal{T}</script></span>
+   of <span><span class="MathJax_Preview">\mathcal{T}</span><script type="math/tex">\mathcal{T}</script></span> is in <span><span class="MathJax_Preview">\mathcal{T}</span><script type="math/tex">\mathcal{T}</script></span>.</li>
 </ol>
 <p>A set <span><span class="MathJax_Preview">X</span><script type="math/tex">X</script></span> for which a topology <span><span class="MathJax_Preview">\mathcal{T}</span><script type="math/tex">\mathcal{T}</script></span> has been specified is called a
 <strong>topological space</strong> and is denoted as the ordered pair <span><span class="MathJax_Preview">(X, \mathcal{T})</span><script type="math/tex">(X, \mathcal{T})</script></span>.</p>
 <p>Let <span><span class="MathJax_Preview">(X \mathcal{T})</span><script type="math/tex">(X \mathcal{T})</script></span> be a topological space. Subset <span><span class="MathJax_Preview">U</span><script type="math/tex">U</script></span> of <span><span class="MathJax_Preview">X</span><script type="math/tex">X</script></span> is an open set
 of <span><span class="MathJax_Preview">X</span><script type="math/tex">X</script></span> if <span><span class="MathJax_Preview">U</span><script type="math/tex">U</script></span> belongs to the collection <span><span class="MathJax_Preview">\mathcal{T}</span><script type="math/tex">\mathcal{T}</script></span>.</p>
+<p>Suppose that <span><span class="MathJax_Preview">\mathcal{T}</span><script type="math/tex">\mathcal{T}</script></span> and <span><span class="MathJax_Preview">\mathcal{T}'</span><script type="math/tex">\mathcal{T}'</script></span> are two topologies on a given set
+<span><span class="MathJax_Preview">X</span><script type="math/tex">X</script></span>.</p>
 <h3 id="common-toplogies">Common Toplogies<a class="headerlink" href="#common-toplogies" title="Permanent link">&para;</a></h3>
 <p>Let <span><span class="MathJax_Preview">X</span><script type="math/tex">X</script></span> be a set. Then the following are a few common topologies on <span><span class="MathJax_Preview">X</span><script type="math/tex">X</script></span>.</p>
 <ul>
 <li>The <em>discrete topology</em> is the collection of all subsets of <span><span class="MathJax_Preview">X</span><script type="math/tex">X</script></span>.</li>
 <li>The <em>indiscrete topology</em>, or <em>trivial topology</em>, is the collection of subsets
   <span><span class="MathJax_Preview">\emptyset</span><script type="math/tex">\emptyset</script></span> and <span><span class="MathJax_Preview">X</span><script type="math/tex">X</script></span>.</li>
+<li>The <em>finite complement topology</em> is the collection of all subsets <span><span class="MathJax_Preview">U</span><script type="math/tex">U</script></span> such
+  that <span><span class="MathJax_Preview">X - U</span><script type="math/tex">X - U</script></span> is finite or is all of <span><span class="MathJax_Preview">X</span><script type="math/tex">X</script></span>.</li>
 </ul>
 <h2 id="basis-for-a-topology">Basis for a Topology<a class="headerlink" href="#basis-for-a-topology" title="Permanent link">&para;</a></h2>
 <h3 id="exercises">Exercises<a class="headerlink" href="#exercises" title="Permanent link">&para;</a></h3>
-<p>1.
-    Let <span><span class="MathJax_Preview">X</span><script type="math/tex">X</script></span> be a topological space; let <span><span class="MathJax_Preview">A</span><script type="math/tex">A</script></span> be a subset of <span><span class="MathJax_Preview">X</span><script type="math/tex">X</script></span>. Suppose that for
-    each <span><span class="MathJax_Preview">x \in A</span><script type="math/tex">x \in A</script></span> there is an open set <span><span class="MathJax_Preview">U</span><script type="math/tex">U</script></span> containing <span><span class="MathJax_Preview">x</span><script type="math/tex">x</script></span> such that <span><span class="MathJax_Preview">U \subset
+<ol>
+<li>
+<p>Let <span><span class="MathJax_Preview">X</span><script type="math/tex">X</script></span> be a topological space; let <span><span class="MathJax_Preview">A</span><script type="math/tex">A</script></span> be a subset of <span><span class="MathJax_Preview">X</span><script type="math/tex">X</script></span>. Suppose that for
+each <span><span class="MathJax_Preview">x \in A</span><script type="math/tex">x \in A</script></span> there is an open set <span><span class="MathJax_Preview">U</span><script type="math/tex">U</script></span> containing <span><span class="MathJax_Preview">x</span><script type="math/tex">x</script></span> such that
+<span><span class="MathJax_Preview">U \subset
     A</span><script type="math/tex">U \subset
     A</script></span>. Show that <span><span class="MathJax_Preview">A</span><script type="math/tex">A</script></span> is open in <span><span class="MathJax_Preview">X</span><script type="math/tex">X</script></span>.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>Then $X$ the
-</code></pre></div>
-</td></tr></table>
-
-<p>2.
-    Consider the nine topologies on the set <span><span class="MathJax_Preview">X = \{a, b, c\}</span><script type="math/tex">X = \{a, b, c\}</script></span> indicated in 
-    Example 1 of section 12. Compare them; that is, for each pair of topologies,
-    determine whether they are comparable, and if so, which is the finer.</p>
-<p>3.
-    Show that the collection <span><span class="MathJax_Preview">\mathcal{T}_c</span><script type="math/tex">\mathcal{T}_c</script></span> fiven in Example 4 of section 12 is a 
-    topology on the set X. Is the collection
-    $$ 
+<p>Then <span><span class="MathJax_Preview">X</span><script type="math/tex">X</script></span> the</p>
+</li>
+<li>
+<p>Consider the nine topologies on the set <span><span class="MathJax_Preview">X = \{a, b, c\}</span><script type="math/tex">X = \{a, b, c\}</script></span> indicated in
+Example 1 of section 12. Compare them; that is, for each pair of topologies,
+determine whether they are comparable, and if so, which is the finer.</p>
+</li>
+<li>
+<p>Show that the collection <span><span class="MathJax_Preview">\mathcal{T}_c</span><script type="math/tex">\mathcal{T}_c</script></span> fiven in Example 4 of section 12 is
+a topology on the set X. Is the collection
+$$ 
     \mathcal{T}_{\infty} = { U \mid X - U \text{ is infinite or empty of all of } X }
     $$
-    a topology on <span><span class="MathJax_Preview">X</span><script type="math/tex">X</script></span>?</p>
+a topology on <span><span class="MathJax_Preview">X</span><script type="math/tex">X</script></span>?</p>
+</li>
+</ol>
 <h2 id="the-order-topology">The Order Topology<a class="headerlink" href="#the-order-topology" title="Permanent link">&para;</a></h2>
 <h2 id="the-product-topology-on-x-times-yx-times-y">The Product Topology on <span><span class="MathJax_Preview">X \times Y</span><script type="math/tex">X \times Y</script></span><a class="headerlink" href="#the-product-topology-on-x-times-yx-times-y" title="Permanent link">&para;</a></h2>
 <h2 id="the-subspace-topology">The Subspace Topology<a class="headerlink" href="#the-subspace-topology" title="Permanent link">&para;</a></h2>
