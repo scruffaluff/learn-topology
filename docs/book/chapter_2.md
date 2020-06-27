@@ -156,9 +156,19 @@ nonempty sets from $\mathcal{T}_C$. Thus each set $X - U_c$ is countable.
 Therefore $\mathcal{T}_C$ is a topology.
 
 !!! example "Exercise 4"
-    (a) If<br>
-    (b) Let<br>
-    \(c) If
+    (a) If $\{ \mathcal{T}_\alpha \}$ is a family of topologies on $X$, show that
+        $\cap \mathcal{T}_\alpha$ is a topology on $X$. Is $\cup 
+        \mathcal{T}_\alpha$ a topology on $X$?<br>
+    (b) Let $\{ \mathcal{T}_\alpha \}$ be a family of topologies on $X$. Show 
+        that there is a unique smallest topology on $X$ containing all the 
+        collections $\mathcal{T}_\alpha$, and unique largest topology conatined
+        in all $\mathcal{T}_\alpha$.<br>
+    \(c) If $X = \{ a, b, c \}$, let<br>
+        $$ \mathcal{T}_1 = \\{ \emptyset, X, \{ a \}, \{ a, b \} \\} \text{ and }
+        \mathcal{T}_2 = \\{ \emptyset, X, \{ a \}, \{ b, c \} \\} $$
+        Find the smallest topology containing $\mathcal{T}_1$ and
+        $\mathcal{T}_2$, and the largest topology contained in $\mathcal{T}_1$
+        and $\mathcal{T}_2$.
 
 !!! example "Exercise 5"
     Show that if $\mathcal{A}$ is a basis for a topology on
@@ -201,7 +211,15 @@ Thus $\mathcal{B}$ is a topology.
     Determine, for each of these topologies, which of the others it contains.
 
 !!! example "Exercise 8"
-    (a) Apply Lemma 13.2 to shwo that the countable collection
+    (a) Apply Lemma 13.2 to show that the countable collection
+        $$ \mathcal{B} = \\{ (a, b) \mid a < b, a \text{ and } b 
+        \text{ rational } \\} $$
+        is a basis that generates the standard topology on $\mathbb{R}$.
+    (b) Show the collection
+        $$ \mathcal{C} = \\{ [a, b) \mid a < b, a \text{ and } b 
+        \text{ rational } \\} $$
+        is a basis that generates a topology different from the lower limit
+        topology on $\mathbb{R}$.
 
 
 ---
