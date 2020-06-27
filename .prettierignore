@@ -4,6 +4,7 @@
 .tox/*
 .venv/*
 *.min.js
+docs/book/*
 node_modules/*
 package-lock.json
 poetry.lock
