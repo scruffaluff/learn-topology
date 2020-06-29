@@ -223,12 +223,150 @@ Therefore, $T_{ \mathcal{A} } = \cap_{c \in C} \mathcal{T}_c$.
 
 ## The Order Topology
 
+### Definitions
+
+__Order Topology__: Let $X$ be a set with a simple order relation; assume $X$
+has more thatn one element. Let $\mathcal{B}$ be the collection of all sets of
+the following types:
+
+1.  All open intervals $(a, b)$ in $X$.
+2.  All intervals of the form $[a_0, b)$, where $a_0$ is the smallest element
+    (if any) of $X$.
+3. All intervals of the form $(a, b_0]$, where $b_0$ is the largest element (if
+   any) of $X$.
+
+The collection $\mathcal{B}$ is a basis for a topology on $X$, which is called
+the order topology.
+
+__Ray__: If $X$ is an ordered set, and $a$ is an element of $X$, there are four
+subsets of $X$ that are called the rays determined by $a$. They are the
+following:
+
+$$
+(a, +\infty) = \{ x \mid x > a \} \\
+(-\infty, a) = \{ x \mid x < a \} \\
+[a, +\infty) = \{ x \mid x \geq a \} \\
+(-\infty, a] = \{ x \mid x \leq a \}
+$$
+
+Sets of the first two types are called open rays, and sets of the last two types
+are called closed rays.
+
 ---
 
 ## The Product Topology on $X \times Y$
 
+### Definitions
+
+__Product Topology__: Let $X$ and $Y$ be topological spaces. The product
+topology on $X \times Y$ is the topology having as basis the collection
+$\mathcal{B}$ of all sets of the form $U \times V$, where $U$ is an open subset
+of $X$ and $V$ is an open subset of $Y$.
+
+__Projection__: Let $\pi_1: X \times Y \rightarrow X$ be defined by the equation
+
+$$ \pi_1(x, y) = x $$
+
+Let $\pi_2: X \times Y \rightarrow Y$ be defined by the equation
+
+$$ \pi_2(x, y) = y $$
+
+The maps $\pi_1$ and $\pi_2$ are called projections of $X \times Y$ onto its
+first and second factors, respectively.
+
+### Theorems
+
+__Theorem 15.1__: If $\mathcal{B}$ is a basis for the topology of $X$ and
+$\mathcal{C}$ is a basis for the topology of $Y$, then the collection
+
+$$ \mathcal{D} = \{ B \times C \mid B \in \mathcal{B} \text{ and } C \in
+\mathcal{C} \} $$
+
+is a basis for the topology of $X \times Y$.
+
+__Theorem 15.2__: The collection
+
+$$ S = \{ \pi_1^{-1}(U) \mid U \text{ open in } X \} \cup \{ \pi_2^{-1}(V) \mid
+V \text{ open in } Y \} $$
+
+is a subbasis for the product topology on $X \times Y$.
+
 ---
 
 ## The Subspace Topology
+
+### Definitions
+
+__Subspace Topology__: Let $X$ be a topological space with topology
+$\mathcal{T}$. If $Y$ is a subset of $X$, the collection
+
+$$ \mathcal{T}_Y = \{ Y \cap U \mid U in \mathcal{T} \} $$
+
+is a topology on $Y$, called the subspace topology and $Y$ is called a subspace
+of $X$.
+
+__Convex__: Let $X$ be an ordered set. A subset $Y$ of $X$ is convex in $X$ if
+for each pair of points $a < b$ of $Y$, the entire interval $(a, b)$ of points
+of $X$ lies in $Y$.
+
+### Theorems
+
+__Lemma 16.1__: If $\mathcal{B}$ is a basis for the topology of $X$ then the
+collection 
+
+$$ \mathcal{B}_Y = \{ B \cap Y \mid B \in \mathcal{B} \} $$ 
+
+is a basis for the subspace topology on Y.
+
+__Lemma 16.2__: Let $Y$ be a subspace of $X$. If $U$ is open in $Y$ and $Y$ is
+open in $X$, then $U$ is open in $X$.
+
+__Theorem 16.3__: If $A$ is a subspace of $X$ and $B$ is a subspace of $Y$, then
+the product topology on $A \times B$ is the same as the topology $A \times B$
+inherits a a subspace of $X \times Y$.
+
+__Theorem 16.4__: Let $X$ be an ordered set in the order topology. Let $Y$ be a
+subset of $X$ that is convex in $X$. Then the order topology on $Y$ is the same
+as the topology $Y$ inherits as a subspace of $X$.
+
+### Exercises
+
+!!! example "Exercise 1" 
+    Show that if $Y$ is a subspace of $X$, and $A$ is a subset of $Y$, then the
+    topology $A$ inherits as a subspace of $Y$ is the same as the topology it
+    inherits as a subspace of $X$.
+
+!!! example "Exercise 3"
+    Consider the set $Y = [-1, 1]$ as a subspace of $\mathbb{R}$. Which of the
+    following sets are open in $Y$? Which are open in $\mathbb{R}$?
+    $$
+        A = \\{ x \mid \frac{1}{2} < |x| < 1 \\}, \\\\
+        B = \\{ x \mid \frac{1}{2} < |x| \leq 1 \\}, \\\\
+        C = \\{ x \mid \frac{1}{2} \leq |x| < 1 \\}, \\\\
+        D = \\{ x \mid \frac{1}{2} \leq |x| \leq 1 \\}, \\\\
+        E = \\{ x \mid 0 < |x| < 1 \text{ and } \frac{1}{x} \notin \mathbb{Z}_+
+        \\}
+    $$
+
+!!! example "Exercise 5"
+    Let $X$ adn $X'$ denote a single set in the topologies $\mathcal{T}$ and
+    $\mathcal{T}'$, respectively. Let $Y$ and $Y'$ denote a single set in the
+    topologies $\mathcal{U}$ and $\mathcal{U}'$, respectively. Assume these sets
+    are nonempty.<br>
+    (a) Show that if $\mathcal{T}' \supseteq \mathcal{T}$ and $\mathcal{U}'
+        \supseteq \mathcal{U}$, then the product topology on $X' \times Y'$ is
+        finer than the product topology on $X \times Y$.
+    (b) Does the converse of (a) hold? Justify your answer.
+
+!!! example "Exercise 7"
+    Let $X$ be an ordered set. If $Y$ is a proper subset of $X$ that is convex
+    in $X$, does it follow that $Y$ is an interval or a ray in $X$?
+
+!!! example "Exercise 9"
+    Show that the dictionary order topology on the set $\mathbb{R} \times
+    \mathbb{R}$ is the same as the product topology $\mathbb{R}_d \times
+    \mathbb{R}$, where $\mathbb{R}_d$ deontes $\mathbb{R}$ in the discrete
+    topology. Compare this topology with the standard topology on
+    $\mathbb{R}^2$.
 
 ---
