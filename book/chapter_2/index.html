@@ -1072,34 +1072,49 @@ each proof will be split into its own section.</p>
 <span><span class="MathJax_Preview">\cup_{ x &lt; a } (x, a) = (-\infty, a)</span><script type="math/tex">\cup_{ x < a } (x, a) = (-\infty, a)</script></span>, and as follows every basis element
 from <span><span class="MathJax_Preview">\mathcal{T}_5</span><script type="math/tex">\mathcal{T}_5</script></span> is in <span><span class="MathJax_Preview">\mathcal{T}_1</span><script type="math/tex">\mathcal{T}_1</script></span>. Thus <span><span class="MathJax_Preview">\mathcal{T}_1 \subseteq
 \mathcal{T}_5</span><script type="math/tex">\mathcal{T}_1 \subseteq
-\mathcal{T}_5</script></span>. Let <span><span class="MathJax_Preview">a &lt; b</span><script type="math/tex">a < b</script></span>... Thus <span><span class="MathJax_Preview">\mathcal{T}_5 \not\subseteq
-\mathcal{T}_1</span><script type="math/tex">\mathcal{T}_5 \not\subseteq
-\mathcal{T}_1</script></span>.</p>
+\mathcal{T}_5</script></span>. </p>
+<p>Consider the open set (0, 1) from <span><span class="MathJax_Preview">\mathcal{T}_1</span><script type="math/tex">\mathcal{T}_1</script></span>. Let <span><span class="MathJax_Preview">X \subseteq
+\mathbb{R}</span><script type="math/tex">X \subseteq
+\mathbb{R}</script></span> and note that <span><span class="MathJax_Preview">\cap_{x \in \mathbb{R} } (-\infty, x) = (-\infty,
+\inf(X))</span><script type="math/tex">\cap_{x \in \mathbb{R} } (-\infty, x) = (-\infty,
+\inf(X))</script></span> if <span><span class="MathJax_Preview">\inf(X)</span><script type="math/tex">\inf(X)</script></span> exists else <span><span class="MathJax_Preview">\emptyset</span><script type="math/tex">\emptyset</script></span>. Similarly, <span><span class="MathJax_Preview">\cup_{x \in
+\mathbb{R} } (-\infty, x) = (-\infty, \sup(X))</span><script type="math/tex">\cup_{x \in
+\mathbb{R} } (-\infty, x) = (-\infty, \sup(X))</script></span> if <span><span class="MathJax_Preview">\sup(X)</span><script type="math/tex">\sup(X)</script></span> exists else
+<span><span class="MathJax_Preview">\mathbb{R}</span><script type="math/tex">\mathbb{R}</script></span>. As follows, open sets from <span><span class="MathJax_Preview">\mathcal{T}_5</span><script type="math/tex">\mathcal{T}_5</script></span> can only be of the
+form <span><span class="MathJax_Preview">(-\infty, x)</span><script type="math/tex">(-\infty, x)</script></span> for <span><span class="MathJax_Preview">x \in \mathbb{R}</span><script type="math/tex">x \in \mathbb{R}</script></span>. Thus <span><span class="MathJax_Preview">(0, 1)</span><script type="math/tex">(0, 1)</script></span> does not belong to
+<span><span class="MathJax_Preview">\mathcal{T}_5</span><script type="math/tex">\mathcal{T}_5</script></span> and <span><span class="MathJax_Preview">\mathcal{T}_5 \not\subseteq \mathcal{T}_1</span><script type="math/tex">\mathcal{T}_5 \not\subseteq \mathcal{T}_1</script></span>.</p>
 </li>
 <li>
 <p><span><span class="MathJax_Preview">\mathcal{T}_1 \subseteq \mathcal{T}_2 \wedge \mathcal{T}_2 \not\subseteq
   \mathcal{T}_1</span><script type="math/tex">\mathcal{T}_1 \subseteq \mathcal{T}_2 \wedge \mathcal{T}_2 \not\subseteq
   \mathcal{T}_1</script></span></p>
-<p>By definition, <span><span class="MathJax_Preview">\mathcal{T}_1 \subseteq \mathcal{T}_2</span><script type="math/tex">\mathcal{T}_1 \subseteq \mathcal{T}_2</script></span>. Let set <span><span class="MathJax_Preview">K =
-\{\frac{1}{n} \mid n \in \mathbb{Z}_+ \}</span><script type="math/tex">K =
-\{\frac{1}{n} \mid n \in \mathbb{Z}_+ \}</script></span> and note that 0 is its
-<a href="https://en.wikipedia.org/wiki/Infimum_and_supremum">infimum</a>. Note that for
-any interval <span><span class="MathJax_Preview">(a, b)</span><script type="math/tex">(a, b)</script></span> such that <span><span class="MathJax_Preview">a &lt; 0 &lt; b</span><script type="math/tex">a < 0 < b</script></span>, there exists an inifinite
-number of elements <span><span class="MathJax_Preview">k \in K</span><script type="math/tex">k \in K</script></span> such that <span><span class="MathJax_Preview">k \in (a, b)</span><script type="math/tex">k \in (a, b)</script></span>. Since <span><span class="MathJax_Preview">(a, b) - K</span><script type="math/tex">(a, b) - K</script></span> is
-not an open interval and contains an infinite number of removed points, it
-cannot be equal to the finite intersection of open intervals. Thus
-<span><span class="MathJax_Preview">\mathcal{T}_2 \not\subseteq \mathcal{T}_1</span><script type="math/tex">\mathcal{T}_2 \not\subseteq \mathcal{T}_1</script></span>.</p>
+<p>By definition, <span><span class="MathJax_Preview">\mathcal{T}_1 \subseteq \mathcal{T}_2</span><script type="math/tex">\mathcal{T}_1 \subseteq \mathcal{T}_2</script></span>.</p>
+<p>Let set <span><span class="MathJax_Preview">K = \{\frac{1}{n} \mid n \in \mathbb{Z}_+ \}</span><script type="math/tex">K = \{\frac{1}{n} \mid n \in \mathbb{Z}_+ \}</script></span> and as follows
+<span><span class="MathJax_Preview">\lim_{n \rightarrow \infty} \frac{1}{n} = 0</span><script type="math/tex">\lim_{n \rightarrow \infty} \frac{1}{n} = 0</script></span>. As follows any interval <span><span class="MathJax_Preview">(a,
+b)</span><script type="math/tex">(a,
+b)</script></span>, where <span><span class="MathJax_Preview">a &lt; 0 &lt; b</span><script type="math/tex">a < 0 < b</script></span>, contains elements from <span><span class="MathJax_Preview">K</span><script type="math/tex">K</script></span>. Since the union and
+intersection of open intervals on <span><span class="MathJax_Preview">\mathbb{R}</span><script type="math/tex">\mathbb{R}</script></span> must be equal to the union of
+disjoint open intervals, any set from <span><span class="MathJax_Preview">\mathcal{T}_1</span><script type="math/tex">\mathcal{T}_1</script></span> which contains 0 must
+be an open interval around 0. As follows, every set from <span><span class="MathJax_Preview">\mathcal{T}_1</span><script type="math/tex">\mathcal{T}_1</script></span>
+containing 0, must also contain an element from <span><span class="MathJax_Preview">K</span><script type="math/tex">K</script></span>. Thus <span><span class="MathJax_Preview">(-1, 1) -K</span><script type="math/tex">(-1, 1) -K</script></span> does
+not belong to <span><span class="MathJax_Preview">\mathcal{T}_1</span><script type="math/tex">\mathcal{T}_1</script></span> and <span><span class="MathJax_Preview">\mathcal{T}_2 \not\subseteq
+\mathcal{T}_1</span><script type="math/tex">\mathcal{T}_2 \not\subseteq
+\mathcal{T}_1</script></span>.</p>
 </li>
 <li>
 <p><span><span class="MathJax_Preview">\mathcal{T}_3 \subseteq \mathcal{T}_1 \wedge \mathcal{T}_1 \not\subseteq
   \mathcal{T}_3</span><script type="math/tex">\mathcal{T}_3 \subseteq \mathcal{T}_1 \wedge \mathcal{T}_1 \not\subseteq
   \mathcal{T}_3</script></span></p>
-<p>By definition, <span><span class="MathJax_Preview">\emptyset</span><script type="math/tex">\emptyset</script></span> and <span><span class="MathJax_Preview">\mathbb{R}</span><script type="math/tex">\mathbb{R}</script></span> are in each topology. Let set
+<p>By definition, <span><span class="MathJax_Preview">\emptyset</span><script type="math/tex">\emptyset</script></span> and <span><span class="MathJax_Preview">\mathbb{R}</span><script type="math/tex">\mathbb{R}</script></span> are in each topology. So let set
 <span><span class="MathJax_Preview">X</span><script type="math/tex">X</script></span> be any open set in <span><span class="MathJax_Preview">\mathcal{T}_3</span><script type="math/tex">\mathcal{T}_3</script></span> that is neither <span><span class="MathJax_Preview">\emptyset</span><script type="math/tex">\emptyset</script></span> or
 <span><span class="MathJax_Preview">\mathbb{R}</span><script type="math/tex">\mathbb{R}</script></span>. Then set <span><span class="MathJax_Preview">U = \mathbb{R} - X</span><script type="math/tex">U = \mathbb{R} - X</script></span> must be finite. Note that
 <span><span class="MathJax_Preview">\cap_{u \in U} [(-\infty, u) \cup (u, \infty)] = X</span><script type="math/tex">\cap_{u \in U} [(-\infty, u) \cup (u, \infty)] = X</script></span> which is in
 <span><span class="MathJax_Preview">\mathcal{T}_1</span><script type="math/tex">\mathcal{T}_1</script></span> since topologies are closed under finite intersection and
 union. Thus <span><span class="MathJax_Preview">\mathcal{T}_1 \subseteq \mathcal{T}_3</span><script type="math/tex">\mathcal{T}_1 \subseteq \mathcal{T}_3</script></span>.</p>
+<p>Consider open set <span><span class="MathJax_Preview">(0, 1)</span><script type="math/tex">(0, 1)</script></span> from <span><span class="MathJax_Preview">\mathcal{T}_1</span><script type="math/tex">\mathcal{T}_1</script></span>. Since <span><span class="MathJax_Preview">\mathbb{R} - (0, 1)</span><script type="math/tex">\mathbb{R} - (0, 1)</script></span>
+is not finite, it does not belong to <span><span class="MathJax_Preview">\mathcal{T}_3</span><script type="math/tex">\mathcal{T}_3</script></span>. Thus <span><span class="MathJax_Preview">\mathcal{T}_1
+\not\subseteq \mathcal{T}_3</span><script type="math/tex">\mathcal{T}_1
+\not\subseteq \mathcal{T}_3</script></span>.</p>
 </li>
 <li>
 <p><span><span class="MathJax_Preview">\mathcal{T}_2 \subseteq \mathcal{T}_4 \wedge \mathcal{T}_4 \not\subseteq
@@ -1117,11 +1132,26 @@ K = (a, 0] \cup \mathcal{K} \cap (0, b)</span><script type="math/tex">(a, b) -
 K = (a, 0] \cup \mathcal{K} \cap (0, b)</script></span>. Thus <span><span class="MathJax_Preview">\mathcal{T}_2 \subseteq
 \mathcal{T}_4</span><script type="math/tex">\mathcal{T}_2 \subseteq
 \mathcal{T}_4</script></span>.</p>
+<p>Consider open set <span><span class="MathJax_Preview">(2, 3]</span><script type="math/tex">(2, 3]</script></span> from <span><span class="MathJax_Preview">\mathcal{T}_4</span><script type="math/tex">\mathcal{T}_4</script></span>. Since the arbitrary union
+and finite intersection of intervals from <span><span class="MathJax_Preview">\mathbb{R}</span><script type="math/tex">\mathbb{R}</script></span> is equal to <a href="https://proofwiki.org/wiki/Open_Sets_in_Real_Number_Line">the
+union of disjoint open
+intervals</a> and
+<span><span class="MathJax_Preview">(2, 3]</span><script type="math/tex">(2, 3]</script></span> is not open in the standard topology, <span><span class="MathJax_Preview">(2, 3]</span><script type="math/tex">(2, 3]</script></span> cannot be in
+<span><span class="MathJax_Preview">\mathcal{T}_2</span><script type="math/tex">\mathcal{T}_2</script></span>. Thus <span><span class="MathJax_Preview">\mathcal{T}_4 \not\subseteq \mathcal{T}_2</span><script type="math/tex">\mathcal{T}_4 \not\subseteq \mathcal{T}_2</script></span>.</p>
 </li>
 <li>
-<p><span><span class="MathJax_Preview">\mathcal{T}_1 \not\subseteq \mathcal{T}_3 \wedge \mathcal{T}_3 \not\subseteq
-  \mathcal{T}_1</span><script type="math/tex">\mathcal{T}_1 \not\subseteq \mathcal{T}_3 \wedge \mathcal{T}_3 \not\subseteq
-  \mathcal{T}_1</script></span></p>
+<p><span><span class="MathJax_Preview">\mathcal{T}_3 \not\subseteq \mathcal{T}_5 \wedge \mathcal{T}_5 \not\subseteq
+  \mathcal{T}_3</span><script type="math/tex">\mathcal{T}_3 \not\subseteq \mathcal{T}_5 \wedge \mathcal{T}_5 \not\subseteq
+  \mathcal{T}_3</script></span></p>
+<p>Consider open set <span><span class="MathJax_Preview">(-\infty, 0) \cup (0, \infty)</span><script type="math/tex">(-\infty, 0) \cup (0, \infty)</script></span> from <span><span class="MathJax_Preview">\mathcal{T}_3</span><script type="math/tex">\mathcal{T}_3</script></span>. From
+the <span><span class="MathJax_Preview">\mathcal{T}_1 \not\subseteq \mathcal{T}_5</span><script type="math/tex">\mathcal{T}_1 \not\subseteq \mathcal{T}_5</script></span> proof, <span><span class="MathJax_Preview">\mathcal{T}_5</span><script type="math/tex">\mathcal{T}_5</script></span>
+cannot contain the set <span><span class="MathJax_Preview">(-\infty, 0) \cup (0, \infty)</span><script type="math/tex">(-\infty, 0) \cup (0, \infty)</script></span>. Thus <span><span class="MathJax_Preview">\mathcal{T}_3
+\not\subseteq \mathcal{T}_5</span><script type="math/tex">\mathcal{T}_3
+\not\subseteq \mathcal{T}_5</script></span>.</p>
+<p>Consider open set <span><span class="MathJax_Preview">(-\infty, 0)</span><script type="math/tex">(-\infty, 0)</script></span> from <span><span class="MathJax_Preview">\mathcal{T}_5</span><script type="math/tex">\mathcal{T}_5</script></span>. Since <span><span class="MathJax_Preview">\mathbb{R} -
+(-\infty, 0)</span><script type="math/tex">\mathbb{R} -
+(-\infty, 0)</script></span> is not finite, it does not belong to <span><span class="MathJax_Preview">\mathcal{T}_3</span><script type="math/tex">\mathcal{T}_3</script></span>. Thus
+<span><span class="MathJax_Preview">\mathcal{T}_5 \not\subseteq \mathcal{T}_3</span><script type="math/tex">\mathcal{T}_5 \not\subseteq \mathcal{T}_3</script></span>.</p>
 </li>
 </ul>
 <p>Therefore the finer relationships between the topologies are</p>
