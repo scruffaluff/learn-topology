@@ -17,7 +17,7 @@
         <meta name="author" content="Adriana Kraig & Macklan Weinstein">
       
       <link rel="shortcut icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.3.3">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.4.0">
     
     
       
@@ -1058,6 +1058,91 @@ comparable.</p>
 = \{ x \mid x < a \} \text { as basis }</script></span>,<br>
 Determine, for each of these topologies, which of the others it contains.</p>
 </div>
+<p>Since each topology is on <span><span class="MathJax_Preview">\mathbb{R}</span><script type="math/tex">\mathbb{R}</script></span>, by lemma 13.1 any topology
+<span><span class="MathJax_Preview">\mathcal{T}_x \subseteq \mathcal{T}_y</span><script type="math/tex">\mathcal{T}_x \subseteq \mathcal{T}_y</script></span> if for any basis element <span><span class="MathJax_Preview">Y \in
+\mathcal{T}_y, Y \in \mathcal{T}_x</span><script type="math/tex">Y \in
+\mathcal{T}_y, Y \in \mathcal{T}_x</script></span>. Since the exercise requires several proofs,
+each proof will be split into its own section.</p>
+<ul>
+<li>
+<p><span><span class="MathJax_Preview">\mathcal{T}_5 \subseteq \mathcal{T}_1 \wedge \mathcal{T}_1 \not\subseteq
+  \mathcal{T}_5</span><script type="math/tex">\mathcal{T}_5 \subseteq \mathcal{T}_1 \wedge \mathcal{T}_1 \not\subseteq
+  \mathcal{T}_5</script></span></p>
+<p>Let set <span><span class="MathJax_Preview">(\infty, a)</span><script type="math/tex">(\infty, a)</script></span> be any basis element from <span><span class="MathJax_Preview">\mathcal{T}_5</span><script type="math/tex">\mathcal{T}_5</script></span>. Then
+<span><span class="MathJax_Preview">\cup_{ x &lt; a } (x, a) = (-\infty, a)</span><script type="math/tex">\cup_{ x < a } (x, a) = (-\infty, a)</script></span>, and as follows every basis element
+from <span><span class="MathJax_Preview">\mathcal{T}_5</span><script type="math/tex">\mathcal{T}_5</script></span> is in <span><span class="MathJax_Preview">\mathcal{T}_1</span><script type="math/tex">\mathcal{T}_1</script></span>. Thus <span><span class="MathJax_Preview">\mathcal{T}_1 \subseteq
+\mathcal{T}_5</span><script type="math/tex">\mathcal{T}_1 \subseteq
+\mathcal{T}_5</script></span>. Let <span><span class="MathJax_Preview">a &lt; b</span><script type="math/tex">a < b</script></span>... Thus <span><span class="MathJax_Preview">\mathcal{T}_5 \not\subseteq
+\mathcal{T}_1</span><script type="math/tex">\mathcal{T}_5 \not\subseteq
+\mathcal{T}_1</script></span>.</p>
+</li>
+<li>
+<p><span><span class="MathJax_Preview">\mathcal{T}_1 \subseteq \mathcal{T}_2 \wedge \mathcal{T}_2 \not\subseteq
+  \mathcal{T}_1</span><script type="math/tex">\mathcal{T}_1 \subseteq \mathcal{T}_2 \wedge \mathcal{T}_2 \not\subseteq
+  \mathcal{T}_1</script></span></p>
+<p>By definition, <span><span class="MathJax_Preview">\mathcal{T}_1 \subseteq \mathcal{T}_2</span><script type="math/tex">\mathcal{T}_1 \subseteq \mathcal{T}_2</script></span>. Let set <span><span class="MathJax_Preview">K =
+\{\frac{1}{n} \mid n \in \mathbb{Z}_+ \}</span><script type="math/tex">K =
+\{\frac{1}{n} \mid n \in \mathbb{Z}_+ \}</script></span> and note that 0 is its
+<a href="https://en.wikipedia.org/wiki/Infimum_and_supremum">infimum</a>. Note that for
+any interval <span><span class="MathJax_Preview">(a, b)</span><script type="math/tex">(a, b)</script></span> such that <span><span class="MathJax_Preview">a &lt; 0 &lt; b</span><script type="math/tex">a < 0 < b</script></span>, there exists an inifinite
+number of elements <span><span class="MathJax_Preview">k \in K</span><script type="math/tex">k \in K</script></span> such that <span><span class="MathJax_Preview">k \in (a, b)</span><script type="math/tex">k \in (a, b)</script></span>. Since <span><span class="MathJax_Preview">(a, b) - K</span><script type="math/tex">(a, b) - K</script></span> is
+not an open interval and contains an infinite number of removed points, it
+cannot be equal to the finite intersection of open intervals. Thus
+<span><span class="MathJax_Preview">\mathcal{T}_2 \not\subseteq \mathcal{T}_1</span><script type="math/tex">\mathcal{T}_2 \not\subseteq \mathcal{T}_1</script></span>.</p>
+</li>
+<li>
+<p><span><span class="MathJax_Preview">\mathcal{T}_3 \subseteq \mathcal{T}_1 \wedge \mathcal{T}_1 \not\subseteq
+  \mathcal{T}_3</span><script type="math/tex">\mathcal{T}_3 \subseteq \mathcal{T}_1 \wedge \mathcal{T}_1 \not\subseteq
+  \mathcal{T}_3</script></span></p>
+<p>By definition, <span><span class="MathJax_Preview">\emptyset</span><script type="math/tex">\emptyset</script></span> and <span><span class="MathJax_Preview">\mathbb{R}</span><script type="math/tex">\mathbb{R}</script></span> are in each topology. Let set
+<span><span class="MathJax_Preview">X</span><script type="math/tex">X</script></span> be any open set in <span><span class="MathJax_Preview">\mathcal{T}_3</span><script type="math/tex">\mathcal{T}_3</script></span> that is neither <span><span class="MathJax_Preview">\emptyset</span><script type="math/tex">\emptyset</script></span> or
+<span><span class="MathJax_Preview">\mathbb{R}</span><script type="math/tex">\mathbb{R}</script></span>. Then set <span><span class="MathJax_Preview">U = \mathbb{R} - X</span><script type="math/tex">U = \mathbb{R} - X</script></span> must be finite. Note that
+<span><span class="MathJax_Preview">\cap_{u \in U} [(-\infty, u) \cup (u, \infty)] = X</span><script type="math/tex">\cap_{u \in U} [(-\infty, u) \cup (u, \infty)] = X</script></span> which is in
+<span><span class="MathJax_Preview">\mathcal{T}_1</span><script type="math/tex">\mathcal{T}_1</script></span> since topologies are closed under finite intersection and
+union. Thus <span><span class="MathJax_Preview">\mathcal{T}_1 \subseteq \mathcal{T}_3</span><script type="math/tex">\mathcal{T}_1 \subseteq \mathcal{T}_3</script></span>.</p>
+</li>
+<li>
+<p><span><span class="MathJax_Preview">\mathcal{T}_2 \subseteq \mathcal{T}_4 \wedge \mathcal{T}_4 \not\subseteq
+  \mathcal{T}_2</span><script type="math/tex">\mathcal{T}_2 \subseteq \mathcal{T}_4 \wedge \mathcal{T}_4 \not\subseteq
+  \mathcal{T}_2</script></span></p>
+<p>Let <span><span class="MathJax_Preview">a, b \in \mathbb{R}</span><script type="math/tex">a, b \in \mathbb{R}</script></span> and note that the set <span><span class="MathJax_Preview">\cup_{ \{ x \mid a &lt; x &lt; b
+\} } (a, x] = (a, b)</span><script type="math/tex">\cup_{ \{ x \mid a < x < b
+\} } (a, x] = (a, b)</script></span> is in <span><span class="MathJax_Preview">\mathcal{T}_4</span><script type="math/tex">\mathcal{T}_4</script></span> since topologies are closed
+under arbitrary union. Let set <span><span class="MathJax_Preview">K = \{\frac{1}{n} \mid n \in \mathbb{Z}_+
+\}</span><script type="math/tex">K = \{\frac{1}{n} \mid n \in \mathbb{Z}_+
+\}</script></span> and let set <span><span class="MathJax_Preview">\mathcal{K} = \cup_{ k \in \mathbb{Z}_+ } (\frac{1}{k + 1},
+\frac{1}{k})</span><script type="math/tex">\mathcal{K} = \cup_{ k \in \mathbb{Z}_+ } (\frac{1}{k + 1},
+\frac{1}{k})</script></span>. Then <span><span class="MathJax_Preview">\mathcal{K}</span><script type="math/tex">\mathcal{K}</script></span> contains no points from <span><span class="MathJax_Preview">K</span><script type="math/tex">K</script></span> and <span><span class="MathJax_Preview">(a, b) -
+K = (a, 0] \cup \mathcal{K} \cap (0, b)</span><script type="math/tex">(a, b) -
+K = (a, 0] \cup \mathcal{K} \cap (0, b)</script></span>. Thus <span><span class="MathJax_Preview">\mathcal{T}_2 \subseteq
+\mathcal{T}_4</span><script type="math/tex">\mathcal{T}_2 \subseteq
+\mathcal{T}_4</script></span>.</p>
+</li>
+<li>
+<p><span><span class="MathJax_Preview">\mathcal{T}_1 \not\subseteq \mathcal{T}_3 \wedge \mathcal{T}_3 \not\subseteq
+  \mathcal{T}_1</span><script type="math/tex">\mathcal{T}_1 \not\subseteq \mathcal{T}_3 \wedge \mathcal{T}_3 \not\subseteq
+  \mathcal{T}_1</script></span></p>
+</li>
+</ul>
+<p>Therefore the finer relationships between the topologies are</p>
+<div>
+<div class="MathJax_Preview">
+    \mathcal{T}_ 5 \subseteq \mathcal{T}_1 \subseteq \mathcal{T}_2 \subseteq 
+    \mathcal{T}_4 \\
+    \mathcal{T}_ 3 \subseteq \mathcal{T}_1 \subseteq \mathcal{T}_2 \subseteq 
+    \mathcal{T}_4 \\
+    \mathcal{T}_ 3 \not\subseteq \mathcal{T}_ 5 \wedge \mathcal{T}_ 5 
+    \not\subseteq \mathcal{T}_ 3
+</div>
+<script type="math/tex; mode=display">
+    \mathcal{T}_ 5 \subseteq \mathcal{T}_1 \subseteq \mathcal{T}_2 \subseteq 
+    \mathcal{T}_4 \\
+    \mathcal{T}_ 3 \subseteq \mathcal{T}_1 \subseteq \mathcal{T}_2 \subseteq 
+    \mathcal{T}_4 \\
+    \mathcal{T}_ 3 \not\subseteq \mathcal{T}_ 5 \wedge \mathcal{T}_ 5 
+    \not\subseteq \mathcal{T}_ 3
+</script>
+</div>
 <div class="admonition example">
 <p class="admonition-title">Exercise 8</p>
 <p>(a) Apply Lemma 13.2 to show that the countable collection
@@ -1147,8 +1232,8 @@ V \text{ open in } Y \} </script>
 <p><strong>Subspace Topology</strong>: Let <span><span class="MathJax_Preview">X</span><script type="math/tex">X</script></span> be a topological space with topology
 <span><span class="MathJax_Preview">\mathcal{T}</span><script type="math/tex">\mathcal{T}</script></span>. If <span><span class="MathJax_Preview">Y</span><script type="math/tex">Y</script></span> is a subset of <span><span class="MathJax_Preview">X</span><script type="math/tex">X</script></span>, the collection</p>
 <div>
-<div class="MathJax_Preview"> \mathcal{T}_Y = \{ Y \cap U \mid U in \mathcal{T} \} </div>
-<script type="math/tex; mode=display"> \mathcal{T}_Y = \{ Y \cap U \mid U in \mathcal{T} \} </script>
+<div class="MathJax_Preview"> \mathcal{T}_Y = \{ Y \cap U \mid U \in \mathcal{T} \} </div>
+<script type="math/tex; mode=display"> \mathcal{T}_Y = \{ Y \cap U \mid U \in \mathcal{T} \} </script>
 </div>
 <p>is a topology on <span><span class="MathJax_Preview">Y</span><script type="math/tex">Y</script></span>, called the subspace topology and <span><span class="MathJax_Preview">Y</span><script type="math/tex">Y</script></span> is called a subspace
 of <span><span class="MathJax_Preview">X</span><script type="math/tex">X</script></span>.</p>
@@ -1200,7 +1285,7 @@ are nonempty.<br>
 (a) Show that if <span><span class="MathJax_Preview">\mathcal{T}' \supseteq \mathcal{T}</span><script type="math/tex">\mathcal{T}' \supseteq \mathcal{T}</script></span> and <span><span class="MathJax_Preview">\mathcal{U}'
     \supseteq \mathcal{U}</span><script type="math/tex">\mathcal{U}'
     \supseteq \mathcal{U}</script></span>, then the product topology on <span><span class="MathJax_Preview">X' \times Y'</span><script type="math/tex">X' \times Y'</script></span> is
-    finer than the product topology on <span><span class="MathJax_Preview">X \times Y</span><script type="math/tex">X \times Y</script></span>.
+    finer than the product topology on <span><span class="MathJax_Preview">X \times Y</span><script type="math/tex">X \times Y</script></span>.<br>
 (b) Does the converse of (a) hold? Justify your answer.</p>
 </div>
 <div class="admonition example">
@@ -1290,14 +1375,14 @@ topology. Compare this topology with the standard topology on
     </div>
     
       <script src="../../assets/javascripts/vendor.d710d30a.min.js"></script>
-      <script src="../../assets/javascripts/bundle.4a5ba8d6.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      <script src="../../assets/javascripts/bundle.b39636ac.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
       
       <script>
         app = initialize({
           base: "../..",
           features: ["tabs"],
           search: Object.assign({
-            worker: "../../assets/javascripts/worker/search.9b3611bd.min.js"
+            worker: "../../assets/javascripts/worker/search.a68abb33.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>
