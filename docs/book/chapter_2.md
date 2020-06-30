@@ -218,30 +218,44 @@ each proof will be split into its own section.
     Let set $(\infty, a)$ be any basis element from $\mathcal{T}_5$. Then
     $\cup_{ x < a } (x, a) = (-\infty, a)$, and as follows every basis element
     from $\mathcal{T}_5$ is in $\mathcal{T}_1$. Thus $\mathcal{T}_1 \subseteq
-    \mathcal{T}_5$. Let $a < b$... Thus $\mathcal{T}_5 \not\subseteq
-    \mathcal{T}_1$.
+    \mathcal{T}_5$. 
+    
+    Consider the open set (0, 1) from $\mathcal{T}_1$. Let $X \subseteq
+    \mathbb{R}$ and note that $\cap_{x \in \mathbb{R} } (-\infty, x) = (-\infty,
+    \inf(X))$ if $\inf(X)$ exists else $\emptyset$. Similarly, $\cup_{x \in
+    \mathbb{R} } (-\infty, x) = (-\infty, \sup(X))$ if $\sup(X)$ exists else
+    $\mathbb{R}$. As follows, open sets from $\mathcal{T}_5$ can only be of the
+    form $(-\infty, x)$ for $x \in \mathbb{R}$. Thus $(0, 1)$ does not belong to
+    $\mathcal{T}_5$ and $\mathcal{T}_5 \not\subseteq \mathcal{T}_1$.
 
 * $\mathcal{T}_1 \subseteq \mathcal{T}_2 \wedge \mathcal{T}_2 \not\subseteq
   \mathcal{T}_1$
 
-    By definition, $\mathcal{T}_1 \subseteq \mathcal{T}_2$. Let set $K =
-    \{\frac{1}{n} \mid n \in \mathbb{Z}_+ \}$ and note that 0 is its
-    [infimum](https://en.wikipedia.org/wiki/Infimum_and_supremum). Note that for
-    any interval $(a, b)$ such that $a < 0 < b$, there exists an inifinite
-    number of elements $k \in K$ such that $k \in (a, b)$. Since $(a, b) - K$ is
-    not an open interval and contains an infinite number of removed points, it
-    cannot be equal to the finite intersection of open intervals. Thus
-    $\mathcal{T}_2 \not\subseteq \mathcal{T}_1$.
+    By definition, $\mathcal{T}_1 \subseteq \mathcal{T}_2$.
+    
+    Let set $K = \{\frac{1}{n} \mid n \in \mathbb{Z}_+ \}$ and as follows
+    $\lim_{n \rightarrow \infty} \frac{1}{n} = 0$. As follows any interval $(a,
+    b)$, where $a < 0 < b$, contains elements from $K$. Since the union and
+    intersection of open intervals on $\mathbb{R}$ must be equal to the union of
+    disjoint open intervals, any set from $\mathcal{T}_1$ which contains 0 must
+    be an open interval around 0. As follows, every set from $\mathcal{T}_1$
+    containing 0, must also contain an element from $K$. Thus $(-1, 1) -K$ does
+    not belong to $\mathcal{T}_1$ and $\mathcal{T}_2 \not\subseteq
+    \mathcal{T}_1$.
 
 * $\mathcal{T}_3 \subseteq \mathcal{T}_1 \wedge \mathcal{T}_1 \not\subseteq
   \mathcal{T}_3$
 
-    By definition, $\emptyset$ and $\mathbb{R}$ are in each topology. Let set
+    By definition, $\emptyset$ and $\mathbb{R}$ are in each topology. So let set
     $X$ be any open set in $\mathcal{T}_3$ that is neither $\emptyset$ or
     $\mathbb{R}$. Then set $U = \mathbb{R} - X$ must be finite. Note that
     $\cap_{u \in U} [(-\infty, u) \cup (u, \infty)] = X$ which is in
     $\mathcal{T}_1$ since topologies are closed under finite intersection and
     union. Thus $\mathcal{T}_1 \subseteq \mathcal{T}_3$.
+
+    Consider open set $(0, 1)$ from $\mathcal{T}_1$. Since $\mathbb{R} - (0, 1)$
+    is not finite, it does not belong to $\mathcal{T}_3$. Thus $\mathcal{T}_1
+    \not\subseteq \mathcal{T}_3$.
 
 * $\mathcal{T}_2 \subseteq \mathcal{T}_4 \wedge \mathcal{T}_4 \not\subseteq
   \mathcal{T}_2$
@@ -254,8 +268,24 @@ each proof will be split into its own section.
     K = (a, 0] \cup \mathcal{K} \cap (0, b)$. Thus $\mathcal{T}_2 \subseteq
     \mathcal{T}_4$.
 
-* $\mathcal{T}_1 \not\subseteq \mathcal{T}_3 \wedge \mathcal{T}_3 \not\subseteq
-  \mathcal{T}_1$
+    Consider open set $(2, 3]$ from $\mathcal{T}_4$. Since the arbitrary union
+    and finite intersection of intervals from $\mathbb{R}$ is equal to [the
+    union of disjoint open
+    intervals](https://proofwiki.org/wiki/Open_Sets_in_Real_Number_Line) and
+    $(2, 3]$ is not open in the standard topology, $(2, 3]$ cannot be in
+    $\mathcal{T}_2$. Thus $\mathcal{T}_4 \not\subseteq \mathcal{T}_2$.
+
+* $\mathcal{T}_3 \not\subseteq \mathcal{T}_5 \wedge \mathcal{T}_5 \not\subseteq
+  \mathcal{T}_3$
+
+    Consider open set $(-\infty, 0) \cup (0, \infty)$ from $\mathcal{T}_3$. From
+    the $\mathcal{T}_1 \not\subseteq \mathcal{T}_5$ proof, $\mathcal{T}_5$
+    cannot contain the set $(-\infty, 0) \cup (0, \infty)$. Thus $\mathcal{T}_3
+    \not\subseteq \mathcal{T}_5$.
+
+    Consider open set $(-\infty, 0)$ from $\mathcal{T}_5$. Since $\mathbb{R} -
+    (-\infty, 0)$ is not finite, it does not belong to $\mathcal{T}_3$. Thus
+    $\mathcal{T}_5 \not\subseteq \mathcal{T}_3$.
 
 Therefore the finer relationships between the topologies are
 
