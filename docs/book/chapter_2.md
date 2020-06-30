@@ -207,6 +207,68 @@ Therefore, $T_{ \mathcal{A} } = \cap_{c \in C} \mathcal{T}_c$.
     = \{ x \mid x < a \} \text { as basis }$,<br>
     Determine, for each of these topologies, which of the others it contains.
 
+Since each topology is on $\mathbb{R}$, by lemma 13.1 any topology
+$\mathcal{T}_x \subseteq \mathcal{T}_y$ if for any basis element $Y \in
+\mathcal{T}_y, Y \in \mathcal{T}_x$. Since the exercise requires several proofs,
+each proof will be split into its own section.
+
+* $\mathcal{T}_5 \subseteq \mathcal{T}_1 \wedge \mathcal{T}_1 \not\subseteq
+  \mathcal{T}_5$
+
+    Let set $(\infty, a)$ be any basis element from $\mathcal{T}_5$. Then
+    $\cup_{ x < a } (x, a) = (-\infty, a)$, and as follows every basis element
+    from $\mathcal{T}_5$ is in $\mathcal{T}_1$. Thus $\mathcal{T}_1 \subseteq
+    \mathcal{T}_5$. Let $a < b$... Thus $\mathcal{T}_5 \not\subseteq
+    \mathcal{T}_1$.
+
+* $\mathcal{T}_1 \subseteq \mathcal{T}_2 \wedge \mathcal{T}_2 \not\subseteq
+  \mathcal{T}_1$
+
+    By definition, $\mathcal{T}_1 \subseteq \mathcal{T}_2$. Let set $K =
+    \{\frac{1}{n} \mid n \in \mathbb{Z}_+ \}$ and note that 0 is its
+    [infimum](https://en.wikipedia.org/wiki/Infimum_and_supremum). Note that for
+    any interval $(a, b)$ such that $a < 0 < b$, there exists an inifinite
+    number of elements $k \in K$ such that $k \in (a, b)$. Since $(a, b) - K$ is
+    not an open interval and contains an infinite number of removed points, it
+    cannot be equal to the finite intersection of open intervals. Thus
+    $\mathcal{T}_2 \not\subseteq \mathcal{T}_1$.
+
+* $\mathcal{T}_3 \subseteq \mathcal{T}_1 \wedge \mathcal{T}_1 \not\subseteq
+  \mathcal{T}_3$
+
+    By definition, $\emptyset$ and $\mathbb{R}$ are in each topology. Let set
+    $X$ be any open set in $\mathcal{T}_3$ that is neither $\emptyset$ or
+    $\mathbb{R}$. Then set $U = \mathbb{R} - X$ must be finite. Note that
+    $\cap_{u \in U} [(-\infty, u) \cup (u, \infty)] = X$ which is in
+    $\mathcal{T}_1$ since topologies are closed under finite intersection and
+    union. Thus $\mathcal{T}_1 \subseteq \mathcal{T}_3$.
+
+* $\mathcal{T}_2 \subseteq \mathcal{T}_4 \wedge \mathcal{T}_4 \not\subseteq
+  \mathcal{T}_2$
+
+    Let $a, b \in \mathbb{R}$ and note that the set $\cup_{ \{ x \mid a < x < b
+    \} } (a, x] = (a, b)$ is in $\mathcal{T}_4$ since topologies are closed
+    under arbitrary union. Let set $K = \{\frac{1}{n} \mid n \in \mathbb{Z}_+
+    \}$ and let set $\mathcal{K} = \cup_{ k \in \mathbb{Z}_+ } (\frac{1}{k + 1},
+    \frac{1}{k})$. Then $\mathcal{K}$ contains no points from $K$ and $(a, b) -
+    K = (a, 0] \cup \mathcal{K} \cap (0, b)$. Thus $\mathcal{T}_2 \subseteq
+    \mathcal{T}_4$.
+
+* $\mathcal{T}_1 \not\subseteq \mathcal{T}_3 \wedge \mathcal{T}_3 \not\subseteq
+  \mathcal{T}_1$
+
+Therefore the finer relationships between the topologies are
+
+$$
+    \mathcal{T}_ 5 \subseteq \mathcal{T}_1 \subseteq \mathcal{T}_2 \subseteq 
+    \mathcal{T}_4 \\
+    \mathcal{T}_ 3 \subseteq \mathcal{T}_1 \subseteq \mathcal{T}_2 \subseteq 
+    \mathcal{T}_4 \\
+    \mathcal{T}_ 3 \not\subseteq \mathcal{T}_ 5 \wedge \mathcal{T}_ 5 
+    \not\subseteq \mathcal{T}_ 3
+$$
+
+
 !!! example "Exercise 8"
     (a) Apply Lemma 13.2 to show that the countable collection
         $$ \mathcal{B} = \\{ (a, b) \mid a < b, a \text{ and } b 
@@ -300,7 +362,7 @@ is a subbasis for the product topology on $X \times Y$.
 __Subspace Topology__: Let $X$ be a topological space with topology
 $\mathcal{T}$. If $Y$ is a subset of $X$, the collection
 
-$$ \mathcal{T}_Y = \{ Y \cap U \mid U in \mathcal{T} \} $$
+$$ \mathcal{T}_Y = \{ Y \cap U \mid U \in \mathcal{T} \} $$
 
 is a topology on $Y$, called the subspace topology and $Y$ is called a subspace
 of $X$.
@@ -355,7 +417,7 @@ as the topology $Y$ inherits as a subspace of $X$.
     are nonempty.<br>
     (a) Show that if $\mathcal{T}' \supseteq \mathcal{T}$ and $\mathcal{U}'
         \supseteq \mathcal{U}$, then the product topology on $X' \times Y'$ is
-        finer than the product topology on $X \times Y$.
+        finer than the product topology on $X \times Y$.<br>
     (b) Does the converse of (a) hold? Justify your answer.
 
 !!! example "Exercise 7"
