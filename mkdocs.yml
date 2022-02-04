@@ -47,11 +47,11 @@ nav:
 plugins:
   - search
 repo_name: learn-topology
-repo_url: https://github.com/wolfgangwazzlestrauss/learn-topology
+repo_url: https://github.com/scruffaluff/learn-topology
 site_author: Adriana Kraig & Macklan Weinstein
 site_description: Workspace for learning topology.
 site_name: Learn Topology
-site_url: https://wolfgangwazzlestrauss.github.io/learn-topology/
+site_url: https://scruffaluff.github.io/learn-topology/
 theme:
   features:
     - tabs

@@ -5,10 +5,10 @@ requires = ["poetry>=1.0"]
 [tool.poetry]
 authors = [
     "Adriana Kraig <kraigadriana@gmail.com>",
-    "Macklan Weinstein <wolfgangwazzlestrauss@gmail.com>",
+    "Macklan Weinstein <macklan.weinstein@gmail.com>",
 ]
 description = "Workspace for learning Topology."
-homepage = "https://github.com/wolfgangwazzlestrauss/learn-topology"
+homepage = "https://github.com/scruffaluff/learn-topology"
 license = "MIT"
 name = "learn-topology"
 readme = "README.md"
